@@ -109,6 +109,9 @@ interface ArbGasInfo {
     /// @notice Get L1 gas fees paid by the current transaction
     function getCurrentTxL1GasFees() external view returns (uint256);
 
+    /// @notice Get L1 gas paid by the current transaction
+    function getCurrentTxL1Gas() external view returns (uint64);
+
     /// @notice Get the backlogged amount of gas burnt in excess of the speed limit
     function getGasBacklog() external view returns (uint64);
 
